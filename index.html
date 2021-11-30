@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Streaming Song App">
+    <meta name="author" content="SGBD">
+    <meta name="generator" content="Sgbd v2.0.0">
+    <title>Itune's Song Streaming</title>
+
+    <!--Load Bootstrap min css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Icon SVG-->
+    <link rel="icon" href="https://icons.getbootstrap.com/icons/earbuds.svg">
+
+    <!--Load Music Class-->
+    <script src="js/Music.class.js"></script>
+
+    <!--Custom CSS-->
+    <link href="css/index.css" rel="stylesheet">
+    
+
+  </head>
+  <body class="bg-dark">
+    
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+            <strong class="navbar-brand">ISS</strong>
+            <button class="navbar-toggler p-0 border-0" type="button" id="toggle" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li id="swicth" style="cursor:pointer;" class="nav-item">
+                <p class="nav-link">Switch Theme</p>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Contact Us </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="mailto:terencehilln@gmail.com">Email me</a></li>
+                    <li><a class="dropdown-item" href="https://twitter.com/FonjiHill">Twitter</a></li>
+                    <li><a class="dropdown-item" href="https://github.com/Fonjihill">Github</a></li>
+                </ul>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <input class="form-control me-2" id="name" type="search" placeholder="Music ?" aria-label="Search">
+                <button class="btn btn-outline-success" id="search">Find</button>
+            </div>
+            </div>
+        </div>
+        </nav>
+
+        <main class="container">
+            <div align="center" class="d-flex align-items-center row p-3 my-3 text-white bg-purple rounded shadow-sm">
+                <div class="d-flex col-5-sm">
+                    <img class="me-3" src="https://icons.getbootstrap.com/icons/earbuds.svg" alt="" width="48" height="38">
+                    <div id="description" align="left" class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">ISS</h1>
+                        <small>Since 2020 .</small>
+                        <small>Find your song the time of one photo</small>
+                    </div>
+                </div>
+                <div id="player" align="center" class="col-7-sm play-on">
+                    <img class="me-3 img-thumbnail" id="img-song" src="#" alt="" width="150" >
+                    <div>
+                        <audio id="audio" src=""></audio>
+                        <div class="controller">
+                            <button id="start-song">Start</button>
+                            <button id="stop-song">Stop</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="my-3 p-3 bg-white rounded shadow-sm">
+                <h6 class="border-bottom pb-2 mb-0">First Results</h6>
+                <div id="interior" class="row">
+                </div>
+            </div>
+
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/index.js"></script>
+  </body>
+</html>
